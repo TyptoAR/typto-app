@@ -244,7 +244,7 @@ function WalletModal({ onClose }: { onClose: () => void }) {
 
 // ─── Customer View ────────────────────────────────────────────────────────────
 function CustomerView() {
-  const { address, isConnected } = useAccount();
+  const { isConnected } = useAccount();
   const { balance, refetch: refetchBalance } = useTYPTOBalance();
   const { payBar, isPending, isConfirming, isSuccess, txHash, error } = usePayBar();
   const { claimFaucet, isPending: faucetPending, isSuccess: faucetSuccess, canClaim } = useFaucet();
