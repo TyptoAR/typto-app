@@ -522,7 +522,7 @@ function AdminView() {
 
 // ─── Main App (needs Wagmi Provider) ─────────────────────────────────────────
 function AppInner() {
-  const { isConnected } = useAccount();
+  const { isConnected, address } = useAccount();
   const { disconnect } = useDisconnect();
   const { isCorrectNetwork, switchToAmoy } = useCorrectNetwork();
   const { balance } = useTYPTOBalance();
